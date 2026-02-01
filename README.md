@@ -1,7 +1,7 @@
 # 🚀 Save Restricted Content Bot
 
 <p align="center">
-  <img src="" alt="Bot Logo" width="200">
+  <img src="logo.png" alt="Bot Logo" width="200">
   <br>
   <b>A High-Performance Telegram Bot to Save Restricted Content</b>
   <br>
