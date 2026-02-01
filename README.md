@@ -5,7 +5,7 @@
   <br>
   <b>A High-Performance Telegram Bot to Save Restricted Content</b>
   <br>
-  <i>Developed with ❤️ by <a href="https://github.com/developershiva18">@developershiva18</a></i>
+  <i>Developed with ❤️ by <a href="@theprofessorreport_bot">SHIVA CHAUDHARY</a></i>
 </p>
 
 ---
@@ -78,9 +78,9 @@ Aap apne custom caption ko dynamic banane ke liye niche diye gaye tags ka use ka
 
 | Role | Link |
 | --- | --- |
-| **Developer** | [@developershiva18](https://www.google.com/search?q=https://github.com/developershiva18) |
+| **Developer** | [SHIVA CHAUDHARY](https://www.google.com/search?q=https://github.com/webdevshiva) |
 | **Library** | [Pyrogram v2.0+](https://github.com/pyrogram/pyrogram) |
-| **Support** | [Telegram Support](https://www.google.com/search?q=https://t.me/developershiva18) |
+| **Support** | [Telegram Support](@theprofessorreport_bot) |
 
 ---
 
