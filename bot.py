@@ -30,7 +30,7 @@ class Bot(Client):
 
     async def start(self):
         await super().start()
-        print('Bot Started Powered By @VJ_Bots')
+        print('Bot Started Powered By ShivaBots')
 
     async def stop(self, *args):
         await super().stop()
