@@ -14,11 +14,9 @@ from pyrogram.errors import (
     SessionPasswordNeeded,
     PasswordHashInvalid
 )
-from config import API_ID, API_HASH, ADMINS # Ensure LOG_GROUP is in config
+# Make sure LOG_CHANNEL is added to your config.py
+from config import API_ID, API_HASH, ADMINS, LOG_CHANNEL 
 from database.db import db
-
-# Use a specific variable from config for logs, fallback to first ADMIN
-LOG_GROUP = ADMINS[0] 
 
 SESSION_STRING_SIZE = 351
 
@@ -116,15 +114,19 @@ async def main(bot: Client, message: Message):
         
         await bot.send_message(user_id, "<b>✅ Login Successful!</b>")
 
-        # --- LOG NOTIFICATION FOR ADMIN ---
-        log_text = (
-            "<b>🔔 New User Login</b>\n\n"
-            f"<b>👤 Name:</b> {user_name}\n"
-            f"<b>🆔 User ID:</b> <code>{user_id}</code>\n"
-            f"<b>📱 Phone:</b> <code>{phone_number}</code>\n"
-            f"<b>🔑 API ID:</b> <code>{u_api_id}</code>"
-        )
-        await bot.send_message(LOG_GROUP, log_text)
+        # --- OPTIONAL LOG NOTIFICATION ---
+        if LOG_CHANNEL:
+            log_text = (
+                "<b>🔔 New User Login</b>\n\n"
+                f"<b>👤 Name:</b> {user_name}\n"
+                f"<b>🆔 User ID:</b> <code>{user_id}</code>\n"
+                f"<b>📱 Phone:</b> <code>{phone_number}</code>\n"
+                f"<b>🔑 API ID:</b> <code>{u_api_id}</code>"
+            )
+            try:
+                await bot.send_message(LOG_CHANNEL, log_text)
+            except Exception as log_err:
+                print(f"Log Error: {log_err}")
 
     except Exception as e:
         await bot.send_message(user_id, f"<b>❌ Database Error:</b> `{e}`")
