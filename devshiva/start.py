@@ -53,7 +53,7 @@ async def check_fsub(client, message):
             await message.reply_text("❌ You are banned from using this bot.")
             return False
     except UserNotParticipant:
-        join_btn = InlineKeyboardMarkup([[InlineKeyboardButton("Join Channel 📢", url="https://t.me/YourChannelLink")]])
+        join_btn = InlineKeyboardMarkup([[InlineKeyboardButton("Join Channel 📢", url="https://t.me/devXvoid")]])
         await message.reply_text("<b>⚠️ Access Denied!</b>\n\nYou must join our updates channel to use this bot.", reply_markup=join_btn)
         return False
     except Exception:
