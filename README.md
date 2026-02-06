@@ -78,7 +78,7 @@ Aap apne custom caption ko dynamic banane ke liye niche diye gaye tags ka use ka
 
 | Role | Link |
 | --- | --- |
-| **Developer** | [SHIVA CHAUDHARY](https://www.google.com/search?q=https://github.com/webdevshiva) |
+| **Developer** | [SHIVA CHAUDHARY](https://www.google.com/search?q=https://github.com/DevXShiva) |
 | **Library** | [Pyrogram v2.0+](https://github.com/pyrogram/pyrogram) |
 | **Support** | [Telegram Support](@theprofessorreport_bot) |
 
